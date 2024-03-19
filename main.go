@@ -38,7 +38,7 @@ func main() {
 	if rs, ok := memberRegs[*lang]; ok {
 		reg = regexp.MustCompile(rs)
 	} else {
-		log.Println("unsupported language at this time %s", *lang)
+		log.Printf("unsupported language at this time %s", *lang)
 		return
 	}
 
